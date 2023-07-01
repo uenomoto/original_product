@@ -1,1 +1,1 @@
-![業務フロー図](../images/transition_diagram.png)
+![画面遷移図](../images/transition_diagram.png)
