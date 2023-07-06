@@ -1,4 +1,5 @@
-![ER 図](../images/cost_men.png)
+
+![cost_men](https://github.com/uenomoto/original_product/assets/113354283/71ec4987-c7ce-401d-8d05-fa829da1b441)
 
 ## テーブル定義書
 
