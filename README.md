@@ -130,7 +130,7 @@
   - Vercel
   - Github Actions
 
-## **開発言語**
+## **予定技術スタック**
 
 - フロントエンド
   - TypeScript
