@@ -20,7 +20,6 @@
 | ID          | id            | bigint      | 不可      | 主キー   |                              | Yes            |
 | ユーザー ID | user_id       | bigint       | 不可      | 外部キー |                              |                |
 | レシピ名    | name          | varchar(255) | 不可      |          |                              |                |
-| 画像        | image         | text         | 可        |          | no_image.png                 |                |
 | 合計原価    | total_cost    | decimal      | 不可      |          |                              |                |
 | 手順        | instructions  | text         | 可        |          | レシピの手順はまだありません |                |
 | 作成日時    | created_at    | timestamp    | 不可      |          |                              |                |
