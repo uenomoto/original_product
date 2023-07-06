@@ -6,7 +6,7 @@
 
 | カラム名         | カラム (英語)      | データ型     | NULL 許容 | キー   | 初期値 | AUTO INCREMENT |
 | ---------------- | ------------------ | ------------ | --------- | ------ | ------ | -------------- |
-| ID               | id                 | integer      | 不可      | 主キー |        | Yes            |
+| ID               | id                 | bigint      | 不可      | 主キー |        | Yes            |
 | メール           | email              | varchar(255) | 不可      |        |        |                |
 | 暗号化パスワード | encrypted_password | varchar(255) | 不可      |        |        |                |
 | 名前             | name               | varchar(255) | 不可      |        |        |                |
@@ -17,7 +17,7 @@
 
 | カラム名    | カラム (英語) | データ型     | NULL 許容 | キー     | 初期値                       | AUTO INCREMENT |
 | ----------- | ------------- | ------------ | --------- | -------- | ---------------------------- | -------------- |
-| ID          | id            | integer      | 不可      | 主キー   |                              | Yes            |
+| ID          | id            | bigint      | 不可      | 主キー   |                              | Yes            |
 | ユーザー ID | user_id       | bigint       | 不可      | 外部キー |                              |                |
 | レシピ名    | name          | varchar(255) | 不可      |          |                              |                |
 | 画像        | image         | text         | 可        |          | no_image.png                 |                |
@@ -30,7 +30,7 @@
 
 | カラム名    | カラム (英語) | データ型     | NULL 許容 | キー     | 初期値 | AUTO INCREMENT |
 | ----------- | ------------- | ------------ | --------- | -------- | ------ | -------------- |
-| ID          | id            | integer      | 不可      | 主キー   |        | Yes            |
+| ID          | id            | bigint      | 不可      | 主キー   |        | Yes            |
 | ユーザー ID | user_id       | bigint       | 不可      | 外部キー |        |                |
 | 仕入れ先 ID | supplier_id   | bigint       | 不可      | 外部キー |        |                |
 | 原価        | cost          | decimal      | 不可      |          |        |                |
@@ -43,7 +43,7 @@
 
 | カラム名  | カラム (英語) | データ型  | NULL 許容 | キー     | 初期値 | AUTO INCREMENT |
 | --------- | ------------- | --------- | --------- | -------- | ------ | -------------- |
-| ID        | id            | integer   | 不可      | 主キー   |        | Yes            |
+| ID        | id            | bigint   | 不可      | 主キー   |        | Yes            |
 | レシピ ID | recipe_id     | bigint    | 不可      | 外部キー |        |                |
 | 原材料 ID | ingredient_id | bigint    | 不可      | 外部キー |        |                |
 | 数量      | quantity      | integer   | 不可      |          |        |                |
@@ -54,7 +54,7 @@
 
 | カラム名    | カラム (英語)     | データ型     | NULL 許容 | キー     | 初期値             | AUTO INCREMENT |
 | ----------- | ----------------- | ------------ | --------- | -------- | ------------------ | -------------- |
-| ID          | id                | integer      | 不可      | 主キー   |                    | Yes            |
+| ID          | id                | bigint      | 不可      | 主キー   |                    | Yes            |
 | ユーザー ID | user_id           | bigint       | 不可      | 外部キー |                    |                |
 | 名前        | name              | varchar(255) | 不可      |          |                    |                |
 | 連絡先情報  | contact_info      | varchar(255) | 可        |          | 連絡先はありません |                |
@@ -67,7 +67,7 @@
 
 | カラム名  | カラム (英語) | データ型  | NULL 許容 | キー     | 初期値 | AUTO INCREMENT |
 | --------- | ------------- | --------- | --------- | -------- | ------ | -------------- |
-| ID        | id            | integer   | 不可      | 主キー   |        | Yes            |
+| ID        | id            | bigint   | 不可      | 主キー   |        | Yes            |
 | レシピ ID | recipe_id     | bigint    | 不可      | 外部キー |        |                |
 | 価格      | price         | decimal   | 不可      |          |        |                |
 | 変更日    | changed_date  | date      | 不可      |          |        |                |
@@ -78,7 +78,7 @@
 
 | カラム名 | カラム (英語) | データ型     | NULL 許容 | キー   | 初期値 | AUTO INCREMENT |
 | -------- | ------------- | ------------ | --------- | ------ | ------ | -------------- |
-| ID       | id            | integer      | 不可      | 主キー |        | Yes            |
+| ID       | id            | bigint      | 不可      | 主キー |        | Yes            |
 | 名前     | name          | varchar(255) | 不可      |        |        |                |
 | 作成日時 | created_at    | timestamp    | 不可      |        |        |                |
 | 更新日時 | updated_at    | timestamp    | 不可      |        |        |                |
@@ -87,7 +87,7 @@
 
 | カラム名  | カラム (英語) | データ型  | NULL 許容 | キー     | 初期値 | AUTO INCREMENT |
 | --------- | ------------- | --------- | --------- | -------- | ------ | -------------- |
-| ID        | id            | integer   | 不可      | 主キー   |        | Yes            |
+| ID        | id            | bigint   | 不可      | 主キー   |        | Yes            |
 | レシピ ID | recipe_id     | bigint    | 不可      | 外部キー |        |                |
 | タグ ID   | tag_id        | bigint    | 不可      | 外部キー |        |                |
 | 作成日時  | created_at    | timestamp | 不可      |          |        |                |
