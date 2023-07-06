@@ -126,10 +126,9 @@
   - Docker Compose version v2.15.1
 
 - インフラ
-  - AWS(ECS Fargate/ECR/RDS/ALB/Route53/ACM/VPC/S3)
+  - AWS(ECS Fargate/ECR/RDS/ALB/Route53/ACM/VPC/S3/cloudformation)
   - Vercel
   - Github Actions
-  - cloudformation
 
 ## **開発言語**
 
