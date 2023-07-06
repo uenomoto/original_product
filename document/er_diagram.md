@@ -1,5 +1,6 @@
 
-![cost_men](https://github.com/uenomoto/original_product/assets/113354283/71ec4987-c7ce-401d-8d05-fa829da1b441)
+![cost_men](https://github.com/uenomoto/original_product/assets/113354283/41e28e3f-a353-441a-9886-296083b64b2a)
+
 
 ## テーブル定義書
 
@@ -31,9 +32,9 @@
 | カラム名    | カラム (英語) | データ型     | NULL 許容 | キー     | 初期値 | AUTO INCREMENT |
 | ----------- | ------------- | ------------ | --------- | -------- | ------ | -------------- |
 | ID          | id            | bigint      | 不可      | 主キー   |        | Yes            |
-| ユーザー ID | user_id       | bigint       | 不可      | 外部キー |        |                |
 | 仕入れ先 ID | supplier_id   | bigint       | 不可      | 外部キー |        |                |
-| 原価        | cost          | decimal      | 不可      |          |        |                |
+| 購入価格    | buy_cost          | decimal      | 不可      |          |        |                |
+| 購入数量    | buy_quantity  | float        | 不可      |           |                   |
 | 単位        | unit          | varchar(255) | 不可      |          |        |                |
 | 原材料名    | name          | varchar(255) | 不可      |          |        |                |
 | 作成日時    | created_at    | timestamp    | 不可      |          |        |                |
@@ -58,8 +59,6 @@
 | ユーザー ID | user_id           | bigint       | 不可      | 外部キー |                    |                |
 | 名前        | name              | varchar(255) | 不可      |          |                    |                |
 | 連絡先情報  | contact_info      | varchar(255) | 可        |          | 連絡先はありません |                |
-| 仕入れ価格  | supplier_price    | decimal      | 不可      |          |                    |                |
-| 仕入れ量    | supplier_quantity | integer      | 不可      |          |                    |                |
 | 作成日時    | created_at        | timestamp    | 不可      |          |                    |                |
 | 更新日時    | updated_at        | timestamp    | 不可      |          |                    |                |
 
