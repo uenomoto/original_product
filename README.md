@@ -136,9 +136,9 @@
   - TypeScript
   - React
   - Next.js
-  - Tailwind CSS
   - Jest
   - React Testing Library
+  - Tailwind CSS
   - ESLint
   - Prettier
 - バックエンド
