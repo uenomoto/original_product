@@ -136,8 +136,8 @@
   - TypeScript
   - React
   - Next.js
-  - Jest
-  - React Testing Library
+  - Jest: Δ
+  - React Testing Library:　Δ
   - Tailwind CSS
   - ESLint
   - Prettier
