@@ -1,5 +1,8 @@
 ## テーブル定義書
 
+![cost_men](https://github.com/uenomoto/original_product/assets/113354283/8217264d-a6e1-49b7-bc6f-bc7f2a8bae10)
+
+
 **ユーザーテーブル(users)**
 
 | カラム名              | カラム (英語)   | データ型     | NULL 許容 | キー   | 初期値 | AUTO INCREMENT | 備考                                                        |
