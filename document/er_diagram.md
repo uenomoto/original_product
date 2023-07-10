@@ -1,6 +1,7 @@
 ## テーブル定義書
 
-![cost_men](https://github.com/uenomoto/original_product/assets/113354283/8217264d-a6e1-49b7-bc6f-bc7f2a8bae10)
+![cost_men](https://github.com/uenomoto/original_product/assets/113354283/57995ce5-4d91-4c32-a3e4-3f0555926d88)
+
 
 
 **ユーザーテーブル(users)**
@@ -25,15 +26,26 @@
 
 **レシピテーブル(recipes)**
 
-| カラム名    | カラム (英語) | データ型     | NULL 許容 | キー     | 初期値                       | AUTO INCREMENT |
-| ----------- | ------------- | ------------ | --------- | -------- | ---------------------------- | -------------- |
-| ID          | id            | bigint       | 不可      | 主キー   |                              | Yes            |
-| ユーザー ID | user_id       | bigint       | 不可      | 外部キー |                              |                |
-| レシピ名    | name          | varchar(255) | 不可      |          |                              |                |
-| 合計原価    | total_cost    | decimal      | 不可      |          |                              |                |
-| 手順        | instructions  | text         | 可        |          | レシピの手順はまだありません |                |
-| 作成日時    | created_at    | timestamp    | 不可      |          |                              |                |
-| 更新日時    | updated_at    | timestamp    | 不可      |          |                              |                |
+| カラム名 | カラム (英語) | データ型 | NULL 許容 | キー | 初期値 | AUTO INCREMENT |
+| --- | --- | --- | --- | --- | --- | --- |
+| ID | id | bigint | 不可 | 主キー |  | Yes |
+| ユーザー ID | user_id | bigint | 不可 | 外部キー |  |  |
+| レシピ名 | name | varchar(255) | 不可 |  |  |  |
+| 合計原価 | total_cost | decimal | 不可 |  |  |  |
+| 作成日時 | created_at | timestamp | 不可 |  |  |  |
+| 更新日時 | updated_at | timestamp | 不可 |  |  |  |
+
+
+レシピ手順テーブル(recipe_procefdures)
+
+| カラム名 | カラム (英語) | データ型 | NULL 許容 | キー | 初期値 | AUTO INCREMENT |
+| --- | --- | --- | --- | --- | --- | --- |
+| ID | id | bigint | 不可 | 主キー |  | Yes |
+| レシピID | recipe_id | bigint | 不可 | 外部キー |  |  |
+| 手順 | procefdures | varchar | 不可 |  |  |  |
+| 作成日時 | created_at | timestamp | 不可 |  |  |  |
+| 更新日時 | updated_at | timestamp | 不可 |  |  |  |
+
 
 **原材料テーブル(ingredients)**
 
