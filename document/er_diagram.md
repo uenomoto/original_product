@@ -1,28 +1,27 @@
 ## テーブル定義書
 
-![cost_men](https://github.com/uenomoto/original_product/assets/113354283/57995ce5-4d91-4c32-a3e4-3f0555926d88)
+![cost_men](https://github.com/uenomoto/original_product/assets/113354283/ea111cf0-170d-4a59-88ba-a04cd6524997)
+
 
 
 
 **ユーザーテーブル(users)**
 
-| カラム名              | カラム (英語)   | データ型     | NULL 許容 | キー   | 初期値 | AUTO INCREMENT | 備考                                                        |
-| --------------------- | --------------- | ------------ | --------- | ------ | ------ | -------------- | ----------------------------------------------------------- |
-| ID                    | id              | integer      | 不可      | 主キー |        | Yes            |                                                             |
-| 暗号化パスワード      | password_digest | varchar(255) | 可        |        |        |                | bcrypt で暗号化されたパスワード、LINE ログインの場合は NULL |
-| 名前                  | username        | varchar(255) | 不可      |        |        |                |                                                             |
-| LINE ログイン用の UID | line_uid        | varchar(255) | 可        |        |        |                | sub フィールドから取得、自作ログインの場合は NULL           |
-| プロフィール画像      | profile_picture | varchar(255) | 可        |        |        |                | LINE のプロフィール画像の URL、自作ログインの場合は NULL    |
-| 作成日時              | created_at      | timestamp    | 不可      |        |        |                |                                                             |
-| 更新日時              | updated_at      | timestamp    | 不可      |        |        |                |                                                             |
+| カラム名 | カラム (英語) | データ型 | NULL許容 | キー | 初期値 | AUTO INCREMENT | 備考 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| auth0のid | sub | string | 不可 | 主キー |  | Yes | 文字列で保存です。これuserの一意のIDになります。 |
+| 名前 | name | varchar(255) | 不可 |  |  |  |  |
+| プロフィール画像 | picture | text | 可 |  |  |  | LINEのプロフィール画像のURL、自作ログインの場合はNULL |
+| 作成日時 | created_at | timestamp | 不可 |  |  |  |  |
+| 更新日時 | updated_at | timestamp | 不可 |  |  |  |  |
 
 **オーストークンテーブルテーブル(auth_tokens)**
 
-| カラム名    | カラム (英語) | データ型     | NULL 許容 | キー     | 初期値 | AUTO INCREMENT | 備考             |
-| ----------- | ------------- | ------------ | --------- | -------- | ------ | -------------- | ---------------- |
-| ID          | id            | integer      | 不可      | 主キー   |        | Yes            |                  |
-| トークン    | token         | varchar(255) | 可        |          |        |                | Auth0 のトークン |
-| ユーザー ID | user_id       | varchar(255) | 不可      | 外部キー |        |                |                  |
+| カラム名 | カラム (英語) | データ型 | NULL許容 | キー | 初期値 | AUTO INCREMENT | 備考 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ID | id | integer | 不可 | 主キー |  | Yes |  |
+| トークン | token | text | 可 |  |  |  | Auth0のトークン(一意であること！) |
+| ユーザーID | user_id | string | 不可 | 外部キー |  |  |  |
 
 **レシピテーブル(recipes)**
 
