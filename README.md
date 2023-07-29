@@ -130,14 +130,12 @@
   - Vercel
   - Github Actions
 
-## **予定技術スタック**
+## **技術スタック**
 
 - フロントエンド
   - TypeScript
   - React
   - Next.js
-  - Jest: Δ
-  - React Testing Library:　Δ
   - Tailwind CSS
   - ESLint
   - Prettier
