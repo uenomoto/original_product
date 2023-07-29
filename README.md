@@ -137,6 +137,7 @@
   - React
   - Next.js
   - Tailwind CSS
+  - axios
   - ESLint
   - Prettier
 - バックエンド
